@@ -60,7 +60,6 @@ const handleClick = async (
         postVideo(newVideo);
         setIsSuccess(true);
 
-        // Now you can use the download URL as needed, for example, save it to state or display it to the user.
       } catch (error) {
         console.error("Error getting download URL:", error);
       }
@@ -110,7 +109,7 @@ function UploadDropzone({ selectedVideo, setSelectedVideo }) {
               <span className="font-semibold">Click to upload</span> or drag and
               drop
             </p>
-            <p className="text-xs text-zinc-500">PDF (up to 50 MB)</p>
+            <p className="text-xs text-zinc-500">Videos(up to 50 MB)</p>
           </div>
         </label>
       </div>
