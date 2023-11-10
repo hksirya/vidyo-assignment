@@ -112,7 +112,9 @@ const VideoDataContent = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:8080/api/post/${id}`);
+        const response = await fetch(
+          `https://vidyo-backend.vercel.app/api/post/${id}`
+        );
         if (response.ok) {
           const data = await response.json();
           console.log(data.data.title);

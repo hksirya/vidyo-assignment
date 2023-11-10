@@ -9,12 +9,15 @@ const VideoContent = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/post/allVideo", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://vidyo-backend.vercel.app/api/post/allVideo",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();
